@@ -1,0 +1,46 @@
+.about {
+  margin-bottom: 190px;
+
+  &-flex {
+    @include flex-b;
+    gap: 30px;
+    width: 100%;
+  }
+
+  &_text-block {
+    max-width: 635px;
+  }
+
+  .h2 {
+    margin-bottom: 23px;
+  }
+
+  &_p {
+    @include text(400, 20px, 30px);
+    color: $col-grey;
+    margin-bottom: 42px;
+  }
+
+  &_img {
+    display: inline-block;
+    min-width: 300px;
+  }
+}
+
+.statistics {
+  @include flex-b;
+
+  &_item {
+    @include flex-in-col;
+  }
+
+  h4 {
+    display: inline-block;
+  }
+
+  &_val {
+    @include text(400, 20px, 30px);
+    color: $col-grey;
+  }
+}
+

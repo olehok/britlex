@@ -1,0 +1,10 @@
+.btn {
+  display: inline-block;
+  padding: 15px 50px;
+  border: 2px solid $col-blue;
+  border-radius: 5px;
+  @include text(500, 20px, 30px);
+  text-align: center;
+  background: $col-blue;
+  color: #FFFFFF;
+}

@@ -1,0 +1,44 @@
+.start {
+  margin-bottom: 100px;
+
+  &-flex {
+    @include flex-b;
+    gap: 60px;
+  }
+
+  &_text-box {
+    max-width: 650px;
+  }
+
+  &_h1 {
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+
+    img {
+      position: absolute;
+      bottom: 30px;
+      right: 0;
+      width: 109px;
+      height: 112px;
+    }
+  }
+
+  &_btn {
+    padding: 32px 117px;
+    border-radius: 15px;
+    @include text(400, 36px, 54px);
+  }
+
+  &_p {
+    margin-bottom: 60px;
+    max-width: 550px;
+    @include text(400, 24px, 40px);
+    color: $col-grey;
+  }
+
+  &_img {
+    max-width: 661px;
+    width: 100%;
+  }
+}

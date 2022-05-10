@@ -1,0 +1,36 @@
+.footer {
+  padding-bottom: 60px;
+
+  &-flex {
+    @include flex-b;
+    width: 100%;
+  }
+
+  &_nav {
+    @include flex-b;
+    margin-bottom: -24px;
+  }
+
+  &_link {
+    display: inline-block;
+    @include text(400, 24px, 36px);
+    color: $col-grey;
+
+    &:not(:first-child)::before {
+      content: "";
+      display: inline-block;
+      margin: 0.2em 0.4em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $col-grey;
+    }
+  }
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: #C4C4C4;
+  margin-bottom: 30px;
+}

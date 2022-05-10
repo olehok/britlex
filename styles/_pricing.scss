@@ -1,0 +1,70 @@
+.pricing {
+  margin-bottom: 250px;
+
+  .h2 {
+    margin-bottom: 57px;
+    text-align: center;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template: 1fr / repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 10px;
+  }
+
+  &_card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    min-height: 580px;
+  }
+
+  &_img {
+    align-self: center;
+    min-height: 350px;
+  }
+
+  &_text-block {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .h3 {
+    margin-bottom: 19px;
+  }
+
+  &_p {
+    flex-grow: 1;
+    margin-bottom: 29px;
+    @include text(400, 20px, 30px);
+    color: $col-grey;
+  }
+
+  &_btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 24px;
+    min-width: 240px;
+    border-radius: 5px;
+    background: $col-lgrey;
+
+    &-num {
+      display: inline-block;
+      @include text(400, 30px, 40px);
+      color: $col-blue;
+    }
+
+    &-val {
+      display: inline-block;
+      @include text(400, 18px, 27px);
+      color: $col-cyan;
+    }
+  }
+
+}

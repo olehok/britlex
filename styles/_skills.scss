@@ -1,0 +1,24 @@
+.skills {
+  margin-bottom: 250px;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+  }
+}
+
+.skills .card {
+  background: $col-mgrey;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.skills .h2 {
+  margin-bottom: 96px;
+  text-align: center;
+}
+
+.skills .h3 {
+  margin-bottom: 23px;
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+$col-black: #000000;
+$col-blue: #263238;
+$col-dblue: #2A3246;
+$col-cyan: #546269;
+$col-grey: #8F95A5;
+$col-mgrey: #F5F5F5;
+$col-lgrey: #EEEEEE;
+
+
+@mixin text($fontw: 400, $fonts: 16px, $lineh: 24px) {
+  font-weight: $fontw;
+  font-size: $fonts;
+  line-height: $lineh;
+}
+
+@mixin title($fonts: 30px, $lineh: 80px) {
+  font-weight: 600;
+  font-size: $fonts;
+  line-height: $lineh;
+}
+
+@mixin flex-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-in-col {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1380px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.h1 {
+  max-width: 390px;
+  @include title(64px);
+  color: $col-black;
+}
+
+.h2 {
+  @include title(48px);
+  color: $col-black;
+}
+
+.h3 {
+  @include title(30px, 50px);
+  color: $col-blue;
+}
+
+.h4 {
+  @include title(48px, 70px);
+  color: $col-dblue;
+}
+
+
+.logo {
+  display: inline-block;
+  font-size: 36px;
+  line-height: 54px;
+  color: $col-black;
+
+  &-grey {
+    font-size: 36px;
+    line-height: 54px;
+    color: $col-grey;
+  }
+}

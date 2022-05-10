@@ -1,0 +1,32 @@
+.header {
+  padding: 55px 0;
+  margin-bottom: 50px;
+
+  &-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_nav {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 33px;
+  }
+
+  &_link {
+    @include text(500, 20px, 30px);
+    color: $col-blue;
+  }
+
+  &_btn {
+    display: inline-block;
+    padding: 17px 57px;
+    border: 2px solid $col-blue;
+    border-radius: 5px;
+    @include text(400, 24px, 36px);
+    color: $col-black;
+  }
+}
+
